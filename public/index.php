@@ -22,7 +22,7 @@ $settings = require __DIR__ . '/../config/settings.php';
 $app = new \Slim\App($settings);
 
 // Set up dependencies
-// require __DIR__ . '/../src/dependencies.php';
+require __DIR__ . '/../config/dependencies.php';
 
 // Register middleware
 // require __DIR__ . '/../src/middleware.php';
@@ -30,7 +30,7 @@ $app = new \Slim\App($settings);
 // require __DIR__ . '/../src/Http/Controllers/TestController.php';
 
 // Register routes
-// require __DIR__ . '/../src/routes.php';
+require __DIR__ . '/../app/Http/routes.php';
 
 // Run app
 $app->run();
