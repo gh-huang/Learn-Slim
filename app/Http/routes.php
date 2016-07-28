@@ -1,7 +1,7 @@
 <?php
 //routes
-$app->get('/', function() {
+$app->get('/', function ($request, $response) {
 	//Sample log message
 	$this->logger->info("Learn-Slim '/' route");
-	echo "this is index.php";
+	return $this->renderer->render($response, 'test.html');
 });

@@ -9,5 +9,10 @@ return [
         	'name' => 'learn-slim',
         	'path' => __DIR__ . '/../logs/app.log',
         ],
+
+        //Renderer settings
+        'renderer' => [
+        	'template_path' => __DIR__ . '/../templates/',
+        ],
     ],
 ];
