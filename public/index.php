@@ -31,6 +31,7 @@ require __DIR__ . '/../config/dependencies.php';
 
 // Register routes
 require __DIR__ . '/../app/Http/routes.php';
+require __DIR__ . '/../app/Http/BaseController.php';
 
 // Run app
 $app->run();

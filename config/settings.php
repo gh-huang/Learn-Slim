@@ -14,5 +14,15 @@ return [
         'renderer' => [
         	'template_path' => __DIR__ . '/../templates/',
         ],
+
+        //Medoo settings
+        'medoo' => [
+            'database_type' => 'mysql',
+            'database_name' => 'slim',
+            'server' => '127.0.0.1',
+            'username' => 'root',
+            'password' => 'password',
+            'charset' => 'utf8',
+        ],
     ],
 ];
