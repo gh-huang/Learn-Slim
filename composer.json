@@ -6,6 +6,6 @@
         "catfan/Medoo": "^1.1"
     },
     "autoload": {
-    	"psr-4": {"app\\Http\\Controllers\\": "app/Http/Controllers/"}
+    	"psr-4": {"app\\Http\\": "app/Http/"}
     }
 }

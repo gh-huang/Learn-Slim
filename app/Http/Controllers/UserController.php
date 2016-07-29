@@ -16,15 +16,13 @@ class UserController extends BaseController
 	
 	public function store($request, $responce)
 	{
+		// $this->logger->info('test');
 		$this->renderer->render($responce, 'register.html');
 	}
 
 	public function create($request, $responce)
 	{
-		$this->medoo->insert('user',[
-			'username' => '342423',
-			'password' => 'password',
-			'email' => '11@qq.com'
-		]);
+		$data = $request->getParsedBody();
+		var_dump($data);
 	} 
 }

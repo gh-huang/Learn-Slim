@@ -24,18 +24,22 @@ $container['medoo'] = function ($c) {
 	return new medoo($settings);
 };
 
-$container['UserController'] = function ($c) {
-	return new app\Http\Controllers\UserController($c['renderer'], $c['medoo']);
+// $container['BaseController'] = function ($c) {
+// 	$controller = new app\Http\BaseController();
+// 	// $controller->setLogger($c['logger']);
+// 	$controller->setRenderer($c['renderer']);
+// 	return $controller;
+// };
+
+$container['PageController'] = function ($c) {
+	$page = new app\Http\Controllers\PageController($c);
+	// $page->setRenderer($c['renderer']);
+	// var_dump($c);
+	return $page;
 };
 
-
-
-
-
-
-
-
-
-
-
-
+// $container['UserController'] = function ($c) {
+// 	$user = new app\Http\Controllers\UserController();
+// 	// $user->setRenderer($c['renderer']);
+// 	return $user;
+// };

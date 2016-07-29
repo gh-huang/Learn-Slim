@@ -2,18 +2,18 @@
 namespace app\Http;
 
 use Slim\Views\PhpRenderer;
+use Interop\Container\ContainerInterface;
 
 /**
 * BaseController
 */
-abstract class BaseController
+class BaseController
 {	
-	protected $renderer;
-	protected $medoo;
+	protected $ci;
 
-	function __construct(PhpRenderer $renderer, \medoo $medoo)
+	public function __construct(ContainerInterface $ci)
 	{
-		$this->renderer = $renderer;
-		$this->medoo = $medoo;
+		$this->ci = $ci;
 	}
+
 }
